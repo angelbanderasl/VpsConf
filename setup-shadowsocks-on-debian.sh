@@ -10,18 +10,21 @@ sudo pip install shadowsocks
 
 
 ########## Setup Shadowsocks ##########
-
+echo Introduce tu Ip :
+read Ipaddress
+echo Introduce tu Contraseña :
+read contraseña
 # How to generate random string: <https://gist.github.com/earthgecko/3089509>
 # And the `tr: Illegal byte sequence` issue:
 # <http://unix.stackexchange.com/questions/45404/why-cant-tr-read-from-dev-urandom-on-osx>
 ramdom_pass=$(LC_CTYPE=C tr -dc 'a-zA-Z0-9' < /dev/urandom | fold -w 16 | head -n 1)
 
 ss_config="{
-  \"server\":\"159.89.82.222\",
+  \"server\":\"$Ipaddress\",
   \"server_port\":447,
   \"local_address\": \"127.0.0.1\",
   \"local_port\":1080,
-  \"password\":\"12345\",
+  \"password\":\"$contraseña\",
   \"timeout\":300,
   \"method\":\"aes-256-cfb\",
   \"fast_open\": false
