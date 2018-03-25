@@ -10,10 +10,6 @@ sudo pip install shadowsocks
 
 
 ########## Setup Shadowsocks ##########
-echo Introduce tu Ip :
-read Ipaddress
-echo Introduce tu Contraseña :
-read contraseña
 # How to generate random string: <https://gist.github.com/earthgecko/3089509>
 # And the `tr: Illegal byte sequence` issue:
 # <http://unix.stackexchange.com/questions/45404/why-cant-tr-read-from-dev-urandom-on-osx>
