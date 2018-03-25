@@ -6,4 +6,4 @@ echo Introduce tu Contraseña :
 read pass
 sed -i "s/mypass/$pass/g" /etc/shadowsocks.json
 cat /etc/shadowsocks.json
-
+echo finish
