@@ -4,6 +4,6 @@ sed -i "s/Ipaddress/$Ipaddress/g" /etc/shadowsocks.json
 
 echo Introduce tu Contraseña :
 read -p pal
-sed -i "s,0000,$pal,g" /etc/shadowsocks.json
+sed -i "s,45634563,$pal,g" /etc/shadowsocks.json
 cat /etc/shadowsocks.json
 
