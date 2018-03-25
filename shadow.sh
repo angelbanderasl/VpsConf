@@ -1,7 +1,7 @@
 echo Introduce tu Ip :
 read -p ": " Ipad
 Ipaddress="$Ipad"
-sed -i "s/101010/$Ipaddress/g" /etc/shadowsocks.json
+sed -i "s/101010/Ipaddress/g" /etc/shadowsocks.json
 
 echo Introduce tu Contraseña :
 read -p ": " pal
