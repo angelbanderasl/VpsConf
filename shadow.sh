@@ -1,6 +1,5 @@
 echo Introduce tu Ip :
-read Ipad
-Ipaddress="$Ipad"
+read Ipaddress
 sed -i "s/Ipaddress/$Ipaddress/g" /etc/shadowsocks.json
 
 echo Introduce tu Contraseña :
