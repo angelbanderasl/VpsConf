@@ -52,7 +52,7 @@ echo -e "\033[1;31mbadvpn stop \033[1;37m Para detener badvpn\033[0m"
 rm -rf /etc/badvpn-install
 cd ; rm -rf badvpn.sh badvpn-1.999.128/ badvpn-1.999.128.tar.bz2 >/dev/null 2>/dev/null
 
-rc.locale="
+rclocale="
 #!/bin/sh -e
 #
 # rc.local
@@ -69,5 +69,5 @@ rc.locale="
 badvpn start
 exit 0
 "
-echo "$rc.locale" > /etc/rc.local
+echo "$rclocale" > /etc/rc.local
 netstat -tunlp
